@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Adivina adivina un número entre 1 y 100</title> <!-- nombre del ejercicio-->
+    <script src="trabajo.js"> </script>
+    <style>
+    
+        body{
+            background-image: url(medium_20131019092007705154.jpg);
+        }
+                /* fondo*/
+
+        p{
+           font-size: 21px;
+            font-weight: bold;
+            color:steelblue;
+        }
+        button{
+         padding-top: 15px;
+            padding-right: 56px;
+            padding-bottom: 4px;
+        }
+                /* css para html*/
+
+        select {
+            color: mediumblue;
+            font-size: 18px;
+        }
+        b{
+           font-size: 21px;
+            font-weight: bold;
+            color: chartreuse;
+        }
+        /* css para html*/
+        h2{
+            color:cyan;
+            font-size: 31px;
+            text-align: center;
+        }
+        
+        #respuestas{
+            font-size: 29px;
+            color: cyan;
+            
+        }
+    </style>
+    
+</head>
+ 
+<body>
+<h2>Adivina un número entre 1 y 100</h2>
+    <b>Intenta adivinar en el menor numero posible de intentos</b>
+
+ 
+
+  <!--  <p>Indica el número de intentos posibles:<input type="text" name="numeroRespuestas" id="numeroRespuestas"></p>-->
+     <select id="text">
+    <!-- los números van del 1 al 5 para no confundir  -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+ 
+    <br>
+    
+     <p>Indica un numero entre 1 y 100:</p>
+    <input id="numero" type="text"/>
+ 
+    <input type="button" value="start" onclick="adivinar()"> 
+
+ 
+<div id="respuestas"></div>
+ <footer>
+      <div class="footer-copyright">
+          <a href="https://mdbootstrap.com/bootstrap-tutorial"></a><p>&copy;Daniel</p>
+    </div>
+     </footer> 
+</body>
+</html>
